@@ -53,6 +53,20 @@ Bienvenue dans ce **LAB** pour pratiquer sereinement !
 
 ---
 
+## 📁 Structure du lab
+
+Le fichier [Vagrantfile](Vagrantfile) crée les machines virtuelles suivantes :
+
+| Nom | Rôle | CPU / RAM | OS |
+|-----|------|----------|----------------|
+| `VM1` | VM de Docker | 1 / 1Go | ubuntu 24.04 |
+| `VM2` | VM de kubernetes master node | 1 / 1Go | ubuntu 24.04 |
+| `VM3` | VM de kubernetes worker node | 2 / 2Go | ubuntu 24.04 |
+
+Pour en savoir plus sur l'outil qui permet de créer, configurer et gérer des machines virtuelles de manière automatisée à l’aide de simples fichiers de configuration, cliques [ici](./vms/README.md).
+
+---
+
 
 ## 🚀 Comment utiliser le LAB
 
@@ -116,23 +130,6 @@ vagrant halt
 ## Kubernetes avec K3S
 
 ➡️ Pour la partie `Kubernetes avec K3S`, cliques [ici](./k3s/README.md) !
-
----
-
-## Machines virtuelles (VMs) avec Vagrant
-
-➡️ Pour la partie `Machines virtuelles`, cliques [ici](./vms/README.md) !
-
----
-
-## 📚 Pour aller plus loin
-
-- [Documentation Docker](https://www.docker.com/)
-- [Documentation Kubernetes](https://kubernetes.io/)
-- [Documentation K3S](https://k3s.io/)
-- [Documentation Vagrant](https://developer.hashicorp.com/vagrant)
-- [Documentation Ansible](https://docs.ansible.com/)
-
 
 ---
 

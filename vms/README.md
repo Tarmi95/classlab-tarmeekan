@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   machines = [
     { name: "VM1", ip: "192.168.56.11", memory: 1024, cpus: 1 },
     { name: "VM2", ip: "192.168.56.12", memory: 1024, cpus: 1 },
-    { name: "VM3", ip: "192.168.56.13", memory: 1024, cpus: 1 }
+    { name: "VM3", ip: "192.168.56.13", memory: 2048, cpus: 2 }
   ]
 
   # Boucle de création des VMs
@@ -47,7 +47,7 @@ vagrant up
 Et les détruire avec :
 
 ```bash
-vagrant destroy
+vagrant destroy -f
 ```
 
 Vagrant utilise souvent `VirtualBox`, `VMware` ou `Hyper-V` comme backend pour exécuter les machines virtuelles.
