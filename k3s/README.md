@@ -1,5 +1,5 @@
 
-# Kubernetes K3S
+# Kubernetes avec K3S
 
 Un cluster kubernetes K3S composé de deux machines virtuelles sous l'OS Ubuntu 24.04 sera installé. `VM2` *(node controleur)* et `VM3` *(node agent)*.
 
@@ -15,6 +15,15 @@ vagrant ssh VM1
 ansible-playbook /vagrant/ansible/playbooks/k3s-deploiement.yaml
 ```
 
+Sortie attendu :
+
+```bash
+PLAY RECAP *******************************************************************************************************
+192.168.56.12              : ok=17   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+192.168.56.13              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+
+
 Il faut compter en moyenne environ **`5 minutes`** pour le deploiement du cluster kubernetes k3s.
 
 Pour quitter une box vagrant taper *`exit`*.
@@ -29,7 +38,7 @@ vagrant ssh VM2  # k3s node controleur
 
 Les actions sont à réaliser sur `VM2` depuis le répertoire personnel de vagrant.
 
-Verifier l'etat du service k3s :
+Verifier que l'etat du service k3s est en cours d'éxecution :
 
 ```bash
 systemctl status k3s
@@ -60,20 +69,29 @@ kubectl get pods -A
 Sortie attendu : 
 
 ```bash
-NAMESPACE     NAME                                      READY   STATUS      RESTARTS   AGE
-kube-system   coredns-ff8999cc5-jg7kr                   1/1     Running     0          22m
-kube-system   helm-install-traefik-crd-xdwf7            0/1     Completed   0          22m
-kube-system   helm-install-traefik-jhghj                0/1     Completed   2          22m
-kube-system   local-path-provisioner-774c6665dc-tckd2   1/1     Running     0          22m
-kube-system   metrics-server-6f4c6675d5-jk2pb           1/1     Running     0          22m
-kube-system   traefik-67bfb46dcb-jhb6n                  1/1     Running     0          21m
+NAMESPACE        NAME                                      READY   STATUS      RESTARTS      AGE
+kube-system      coredns-7588999887-rzlxz                  1/1     Running     0             13m
+kube-system      helm-install-traefik-crd-446hd            0/1     Completed   0             13m
+kube-system      helm-install-traefik-grvpq                0/1     Completed   2             13m
+kube-system      local-path-provisioner-774c6665dc-dqlrh   1/1     Running     0             13m
+kube-system      metrics-server-6f4c6675d5-w7cxl           1/1     Running     0             13m
+kube-system      traefik-67bfb46dcb-mst6l                  1/1     Running     0             12m
+metallb-system   controller-bb5f47665-djrjk                1/1     Running     0             12m
+metallb-system   speaker-b4kwz                             1/1     Running     0             12m
+metallb-system   speaker-k8pnl                             1/1     Running     0             12m
 ```
+
+Si tu as 0/1 `CrashLoopBackOff` ou `Pending` pour le pod CoreDNS  :
+
+```bash
+kubectl -n kube-system rollout restart deployment coredns
+```
+
+Cette commande provoque le remplacement de ou des pods un par un.
 
 ### 4. Gestion du cluster kubernetes depuis `VM1`
 
 Les actions sont à réaliser sur `VM1` depuis le répertoire personnel de vagrant.
-
-Verifier l'etat du service k3s :
 
 ```bash
 vagrant ssh VM1
@@ -83,6 +101,8 @@ vagrant ssh VM1
 sudo /vagrant/setup-helm-kubectl-vm1.sh
 ```
 Le script est à executer une seule fois, lors de la première connexion sur `VM1`.
+
+Verifier l'etat du cluster k3s :
 
 ```bash
 kubectl get nodes

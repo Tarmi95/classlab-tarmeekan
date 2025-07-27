@@ -45,6 +45,7 @@ Vagrant.configure("2") do |config|
                     guest: 22,
                     host:  2221,
                     id:    "ssh"
+                    
     node.vm.provider "virtualbox" do |vb|
       vb.name   = "VM1"
       vb.memory = 1024
