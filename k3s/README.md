@@ -147,6 +147,13 @@ kubectl get nodes
 ```
 ---
 
+## **Pratiquer `Kubernetes` :**  
+
+➡️ Pour la partie des ateliers `Kubernetes`, cliques [ici](./ateliers/atelier-1.md) !
+
+---
+
+
 ## 📚 Pour aller plus loin
 
 - [Documentation Kubernetes](https://www.docker.com/)
