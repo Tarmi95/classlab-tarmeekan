@@ -1,0 +1,64 @@
+
+# ------------------------
+# Fichiers par défaut
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+quiz-app/
+
+# VSCode
+.vscode/
+.history/
+
+# Windows Specific
+ehthumbs.db
+Icon?
+*.lnk
+
+# Ansible
+*.retry
+*.vault_pass
+
+# Docker
+*.tar
+*.env
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfplan
+*.tfvars
+*.tfvars.json
+
+# Kubernetes
+*.kube/config
+kustomization.yaml
+
+# Vagrant
+.vagrant/
+*.box
+
+# Python (if used for Ansible scripts)
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Secrets / Sensitive Files
+.env
+*.pem
+*.key
+secrets.yaml
+vault_password.txt
