@@ -65,18 +65,18 @@ ping -c 4 <IP_nginx>
 kubectl run -it alpine --image=alpine:3.22 sh
 ```
 
-Installer curl via le gestionnaire de paquets `apk` :
+- Installer curl via le gestionnaire de paquets `apk` :
 ```bash
 apk --update add curl
 ```
 
-Lancer la commande `curl` avec l'adresse IP du pod `nginx` :
+- Lancer la commande `curl` avec l'adresse IP du pod `nginx` :
 ```bash
 curl <IP_nginx>
 ```
 ✅ Résultat attendu : contenu HTML de la page NGINX.
 
-Tester la resolution DNS du pod `nginx` :
+- Tester la resolution DNS du pod `nginx` :
 ```bash
 curl nginx
 ```
@@ -110,7 +110,7 @@ kubectl get pods
 
 ---
 
-## PARTIE 3. Exposer des pods via des services
+## PARTIE 3. Exposer des pods à l'extérieur via des services
 
 #### 1. Créer un pod nommé `nginx` avec comme image `nginx:1.28.0` :
 
@@ -147,17 +147,17 @@ kubectl get service
 
 Comprendre la différence entre accéder directement à un pod (**IP éphémère**) et accéder à un **service (IP stable)**.
 
-Créer un pod interactif `alpine` pour tester depuis un autre conteneur :
+- Créer un pod interactif `alpine` pour tester depuis un autre conteneur :
 ```bash
 kubectl run -it alpine --image=alpine:3.22 sh
 ```
 
-Installer `curl` dans le pod `alpine` :
+- Installer `curl` dans le pod `alpine` :
 ```bash
 apk --update add curl
 ```
 
-Récupérer l'IP du service :
+- Récupérer l'IP du service :
 ```bash
 kubectl get service nginx
 ```
@@ -186,19 +186,19 @@ curl nginx
 
 #### 7. Test depuis un navigateur Web :
 
-Récupérer le port NodePort du service :
+- Récupérer le port NodePort du service :
 ```bash
 kubectl get service nginx
 ```
 Repérez la partie `30000-32767` dans `PORT(S)`.
 
-Identifier l’IP du nœud qui hébèrge le pod `nginx` :
+- Identifier l’IP du nœud qui hébèrge le pod `nginx` :
 
 ```bash
 kubectl describe pod nginx | grep Node
 ```
 
-Ouvrir un navigateur et saisir :
+- Ouvrir un navigateur et saisir :
 ```
 http://<IP_NODE>:<NODE_PORT>
 ```
@@ -224,7 +224,7 @@ kubectl get pods
 
 ## PARTIE 4. De Dockerfile à Pod
 
-**À partir d’une application nommée `python-app` dont le code source est sur [https://gitlab.com/ftutorials-projets/python-app](https://gitlab.com/ftutorials-projets/python-app), contenant déjà un Dockerfile, vous devez :**
+#### À partir d’une application nommée `python-app` dont le code source est sur [https://gitlab.com/ftutorials-projets/python-app](https://gitlab.com/ftutorials-projets/python-app), contenant déjà un Dockerfile, vous devez :
 
 #### 1. Construire une image Docker.
 
@@ -238,10 +238,12 @@ kubectl get pods
 
 ---
 
-### Atelier terminé ! Félicitations !!!
+### Atelier terminé ! Félicitations !!! Pensez à supprimer vos ressources pour maintenir un environnement propre.
 
 
-[Passer à l'atelier suivant](atelier-3.md)
+[Passer à l'atelier suivant](atelier-3-manifests_kubernetes.md)
+
+[Revenir à l'atelier precedent](atelier-1-kubernetes_dashboard.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
