@@ -8,6 +8,7 @@ desktop.ini
 *.log
 
 quiz-app/
+k3s/manifests-kubernetes
 
 # VSCode
 .vscode/
