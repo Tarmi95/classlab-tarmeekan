@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   # ────────────────────────────────────────────────────────────────────────────
   machines = [
     { name: "VM2", box: "bento/ubuntu-24.04",     ip: "192.168.56.12", memory: 1024, cpus: 1 },
-    { name: "VM3", box: "bento/ubuntu-24.04", ip: "192.168.56.13", memory: 2048, cpus: 2 }
+    { name: "VM3", box: "bento/ubuntu-24.04", ip: "192.168.56.13", memory: 3096, cpus: 2 }
   ]
 
   machines.each_with_index do |machine, idx|
