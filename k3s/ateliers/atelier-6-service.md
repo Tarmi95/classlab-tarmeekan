@@ -33,11 +33,6 @@ kubectl expose pod python-app --name=python-nodeport --type=NodePort --port=5000
 - **NodePort** expose le port sur chaque nœud du cluster (30000–32767).  
 - Accessible depuis l’extérieur via `http://<IP_NŒUD>:<NODE_PORT>`.  
 
-#### 4. Créer un service de type `NodePort` nommé `python-nodeport` sur le pod `python-app` :
-```bash
-kubectl expose pod python-app --name=python-nodeport --type=NodePort --port=5000
-```
-
 #### 4. Créer un service de type `LoadBalancer` nommé `python-lb` sur le pod `python-app` :
 ```bash
 kubectl expose pod python-app --name=python-lb --type=LoadBalancer --port=5000
@@ -74,9 +69,9 @@ kubectl get pods,svc
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-6-service.md)
+[Passer à l'atelier suivant](atelier-7-stockage_persistent.md)
 
-[Revenir à l'atelier precedent](atelier-4-replicasets.md)
+[Revenir à l'atelier precedent](atelier-5-deployment.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
