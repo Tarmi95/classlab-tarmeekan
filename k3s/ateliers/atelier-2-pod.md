@@ -23,7 +23,7 @@ kubectl [commande] [ressource] [nom] [options]
 ```bash
 kubectl config current-context
 ```
-✅ Résultat attendu : le nom du cluster actif.
+Résultat attendu : le nom du cluster actif.
 
 #### 2. Afficher l’aide de la commande `kubectl run` :
 ```bash
@@ -41,7 +41,7 @@ kubectl run nginx --image=nginx:1.28.0
 ```bash
 kubectl get pods
 ```
-✅ Le pod `nginx` doit apparaître avec le statut `Running`.
+Le pod `nginx` doit apparaître avec le statut `Running`.
 
 ---
 
@@ -52,7 +52,7 @@ kubectl get pods
 ```bash
 kubectl describe pod nginx
 ```
-✅ Vous verrez des infos comme : l'IP, le conteneur, l'image, le statut, les événements....
+Vous verrez des infos comme : l'IP, le conteneur, l'image, le statut, les événements....
 
 #### 2. Recuperer l'adresse IP du pod `nginx` et tester la connectivité avec `ping` : 
 ```bash
@@ -74,7 +74,7 @@ apk --update add curl
 ```bash
 curl <IP_nginx>
 ```
-✅ Résultat attendu : contenu HTML de la page NGINX.
+Résultat attendu : contenu HTML de la page NGINX.
 
 - Tester la resolution DNS du pod `nginx` :
 ```bash
@@ -91,7 +91,7 @@ ou
 ```bash
 kubectl logs nginx --container=nginx
 ```
-✅ Résultat attendu : logs générés par nginx.
+Résultat attendu : logs générés par nginx.
 
 #### 5. supprimer le pod `nginx` :
 ```bash
@@ -122,7 +122,7 @@ kubectl run nginx --image=nginx:1.28.0
 ```bash
 kubectl get pods
 ```
-✅ Le pod `nginx` doit apparaître avec un statut `Running`.
+Le pod `nginx` doit apparaître avec un statut `Running`.
 
 #### 3. Consulter l’aide de la commande `kubectl expose` :
 ```bash
@@ -134,13 +134,13 @@ kubectl expose --help
 ```bash
 kubectl expose pod nginx --type=NodePort --port=80
 ```
-✅ Un service sera créé et attribuera automatiquement un port entre `30000` et `32767`.
+Un service sera créé et attribuera automatiquement un port entre `30000` et `32767`.
 
 #### 5. Vérifier la création du service :
 ```bash
 kubectl get service
 ```
-✅ Rechercher la colonne `PORT(S)` avec le format `80:<nodePort>/TCP`.
+Rechercher la colonne `PORT(S)` avec le format `80:<nodePort>/TCP`.
 
 
 #### 6. Tester l'accès au pod via un autre pod avec curl
@@ -161,13 +161,13 @@ apk --update add curl
 ```bash
 kubectl get service nginx
 ```
-✅ Notez la colonne `CLUSTER-IP` (ex. : `10.43.72.183`)
+Notez la colonne `CLUSTER-IP` (ex. : `10.43.72.183`)
 
 Tester avec curl depuis `alpine` :
 ```bash
 curl <CLUSTER-IP>
 ```
-✅ Résultat attendu : page HTML **"Welcome to nginx!"**
+Résultat attendu : page HTML **"Welcome to nginx!"**
 
 Si le test échoue :
 - Vérifiez que le service est bien associé au bon pod.
@@ -178,7 +178,7 @@ Tester via le nom DNS du service :
 ```bash
 curl nginx
 ```
-✅ Résultat attendu : page HTML **"Welcome to nginx!"**
+Résultat attendu : page HTML **"Welcome to nginx!"**
 
 ### 💡 A savoir
 - L’IP du **service** est **stable**, contrairement à celle d’un pod.
@@ -203,7 +203,7 @@ kubectl describe pod nginx | grep Node
 http://<IP_NODE>:<NODE_PORT>
 ```
 
-✅ Résultat attendu : la **page d’accueil de nginx** s’affiche.
+Résultat attendu : la **page d’accueil de nginx** s’affiche.
 
 
 #### 8. Supprimer le service `nginx`:
