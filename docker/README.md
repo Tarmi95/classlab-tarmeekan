@@ -36,7 +36,7 @@ Vérifie que le conteneur tourne :
 docker container ls
 ```
 
-Accède à l'application :
+Accède à l'application afin d'effectuer le Quiz :
 
 **[http://192.168.56.11](http://192.168.56.11)**
 

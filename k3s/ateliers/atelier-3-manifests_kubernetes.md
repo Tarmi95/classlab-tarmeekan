@@ -194,14 +194,7 @@ kubectl get pod nginx -o yaml
 
 Recherchez l’annotation `kubectl.kubernetes.io/last-applied-configuration`.
 
-
-#### 5. Option `--save-config` (facultatif)
-Si vous ne l’avez pas utilisé lors de la création, vous pouvez toujours appliquer : 
-```bash
-kubectl apply --save-config -f nginx-pod.yaml
-```
-
-#### 6. Supprimer le pod :
+#### 5. Supprimer le pod :
 
 ```bash
 kubectl delete -f nginx-pod.yaml
