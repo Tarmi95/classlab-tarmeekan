@@ -11,9 +11,9 @@
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-8-deploiement_app_bdd.md)
+[Passer à l'atelier suivant](atelier-9-ingress.md)
 
-[Revenir à l'atelier precedent](atelier-6-service.md)
+[Revenir à l'atelier precedent](atelier-7-stockage_persistent.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
