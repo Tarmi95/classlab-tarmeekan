@@ -21,7 +21,7 @@
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 

@@ -243,7 +243,7 @@ La mise à l’échelle des deployments est importante pour gérer les ressource
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 

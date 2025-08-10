@@ -54,7 +54,7 @@ kubectl create token kubernetes-dashboard \
 
 Ouvrir votre navigateur et aller à :
 
-**[https://192.168.56.241](https://192.168.56.241)**
+**[https://192.168.56.241/#/login](https://192.168.56.241/#/login)**
 
 Sur la page d’accueil du Dashboard, sélectionner “Jeton”.
 
@@ -80,7 +80,7 @@ Connexion (Valider) : tu arrives alors sur l’interface graphique du Kubernetes
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 
