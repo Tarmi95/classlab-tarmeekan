@@ -11,9 +11,9 @@
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-9-ingress.md)
+[Passer à l'atelier suivant](atelier-09-ingress.md)
 
-[Revenir à l'atelier precedent](atelier-7-stockage_persistent.md)
+[Revenir à l'atelier precedent](atelier-07-stockage_persistent.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)

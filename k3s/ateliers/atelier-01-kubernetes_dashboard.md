@@ -72,7 +72,7 @@ Connexion (Valider) : tu arrives alors sur l’interface graphique du Kubernetes
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-2-pod.md)
+[Passer à l'atelier suivant](atelier-02-pod.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)

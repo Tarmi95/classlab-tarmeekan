@@ -138,7 +138,7 @@ Résultat attendu : chaque hôte retourne la réponse du service correspondant.
 
 [Passer à l'atelier suivant](atelier-10-configmap.md)
 
-[Revenir à l'atelier precedent](atelier-8-deploiement_app_bdd.md)
+[Revenir à l'atelier precedent](atelier-08-deploiement_app_bdd.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)

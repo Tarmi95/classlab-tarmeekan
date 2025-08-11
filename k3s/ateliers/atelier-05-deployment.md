@@ -233,9 +233,9 @@ La mise à l’échelle des deployments est importante pour gérer les ressource
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-6-service.md)
+[Passer à l'atelier suivant](atelier-06-service.md)
 
-[Revenir à l'atelier precedent](atelier-4-replicasets.md)
+[Revenir à l'atelier precedent](atelier-04-replicasets.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)

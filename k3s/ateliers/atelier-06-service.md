@@ -69,9 +69,9 @@ kubectl get pods,svc
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-7-stockage_persistent.md)
+[Passer à l'atelier suivant](atelier-07-stockage_persistent.md)
 
-[Revenir à l'atelier precedent](atelier-5-deployment.md)
+[Revenir à l'atelier precedent](atelier-05-deployment.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)

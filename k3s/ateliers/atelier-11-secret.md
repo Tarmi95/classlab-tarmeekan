@@ -127,7 +127,7 @@ cat /etc/secret-volume/password
 
 [Passer à l'atelier suivant](atelier-11-secret.md)
 
-[Revenir à l'atelier precedent](atelier-9-ingress.md)
+[Revenir à l'atelier precedent](atelier-09-ingress.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
