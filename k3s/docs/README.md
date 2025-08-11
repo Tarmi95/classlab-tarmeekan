@@ -40,3 +40,9 @@ Ce fichier contient une liste de liens vers la documentation Kubernetes, prêts 
 - Recherchez le dossier importé et cliquez sur un lien pour tester.
 - Les pages de documentation Kubernetes devraient s’ouvrir correctement.
 
+---
+
+## Pratiquer `Kubernetes` :
+
+➡️ Pour la partie des ateliers `Kubernetes`, cliques [ici](../ateliers/) !
+
