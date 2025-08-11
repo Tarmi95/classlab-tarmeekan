@@ -136,7 +136,7 @@ Résultat attendu : chaque hôte retourne la réponse du service correspondant.
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-9-ingress.md)
+[Passer à l'atelier suivant](atelier-10-configmap.md)
 
 [Revenir à l'atelier precedent](atelier-8-deploiement_app_bdd.md)
 

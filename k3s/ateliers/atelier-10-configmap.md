@@ -58,7 +58,7 @@ spec:
 kubectl apply -f pod-env.yaml
 ```
 
-#### 3. Vérifiez :
+#### 3. Afficher les variables d’environnement du conteneur :
 ```bash
 kubectl exec -it pod-env -- env | grep APP_
 ```
