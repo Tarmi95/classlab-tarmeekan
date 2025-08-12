@@ -243,9 +243,9 @@ kubectl apply -f nginx.yaml
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-4-replicasets.md)
+[Passer à l'atelier suivant](atelier-04-replicasets.md)
 
-[Revenir à l'atelier precedent](atelier-2-pod.md)
+[Revenir à l'atelier precedent](atelier-02-pod.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
@@ -253,7 +253,7 @@ kubectl apply -f nginx.yaml
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 

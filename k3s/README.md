@@ -156,7 +156,7 @@ kubectl get nodes
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](./docs/README.md)
 - [Documentation K3S](https://k3s.io/)
 - [Retour en arrière](../README.md)
 

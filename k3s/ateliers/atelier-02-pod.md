@@ -241,9 +241,9 @@ kubectl get pods
 ### Atelier terminé ! Félicitations !!! Pensez à supprimer vos ressources pour maintenir un environnement propre.
 
 
-[Passer à l'atelier suivant](atelier-3-manifests_kubernetes.md)
+[Passer à l'atelier suivant](atelier-03-manifests_kubernetes.md)
 
-[Revenir à l'atelier precedent](atelier-1-kubernetes_dashboard.md)
+[Revenir à l'atelier precedent](atelier-01-kubernetes_dashboard.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
@@ -251,7 +251,7 @@ kubectl get pods
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 

@@ -230,9 +230,9 @@ Confirmez s’il a été supprimé ou s’il reste en fonction de la politique d
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-8-deploiement_app_bdd.md)
+[Passer à l'atelier suivant](atelier-08-deploiement_app_bdd.md)
 
-[Revenir à l'atelier precedent](atelier-6-service.md)
+[Revenir à l'atelier precedent](atelier-06-service.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
@@ -240,7 +240,7 @@ Confirmez s’il a été supprimé ou s’il reste en fonction de la politique d
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 

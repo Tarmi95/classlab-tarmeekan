@@ -140,9 +140,9 @@ kubectl delete pod nginx-extra
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-5-deployment.md)
+[Passer à l'atelier suivant](atelier-05-deployment.md)
 
-[Revenir à l'atelier precedent](atelier-3-manifests_kubernetes.md)
+[Revenir à l'atelier precedent](atelier-03-manifests_kubernetes.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
@@ -150,7 +150,7 @@ kubectl delete pod nginx-extra
 
 ## 📚 Pour aller plus loin
 
-- [Documentation Kubernetes](https://www.docker.com/)
+- [Documentation Kubernetes](https://kubernetes.io/)
 - [Documentation K3S](https://k3s.io/)
 
 
