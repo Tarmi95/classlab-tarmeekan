@@ -125,9 +125,9 @@ cat /etc/secret-volume/password
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-11-secret.md)
+[Passer à l'atelier suivant](atelier-12-monitoring.md)
 
-[Revenir à l'atelier precedent](atelier-09-ingress.md)
+[Revenir à l'atelier precedent](atelier-10-configmap.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
