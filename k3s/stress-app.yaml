@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stress-app
+  labels:
+    app: stress-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stress-app
+  template:
+    metadata:
+      labels:
+        app: stress-app
+    spec:
+      containers:
+      - name: stress-app
+        image: ftutorials/stress-app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5001
+        resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "300m"
+              memory: "256Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stress-app-svc
+  labels:
+    app: stress-app
+spec:
+  selector:
+    app: stress-app
+  ports:
+  - name: http
+    protocol: TCP
+    port: 5001       
+    targetPort: 5001    
+  type: NodePort
