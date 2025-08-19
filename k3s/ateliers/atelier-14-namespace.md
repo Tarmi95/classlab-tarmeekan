@@ -154,9 +154,9 @@ kubectl describe limitrange defaults -n ecole
 
 ### Atelier terminé ! Félicitations !!!
 
-[Passer à l'atelier suivant](atelier-14-node-affinity.md)
+[Passer à l'atelier suivant](atelier-15-labels_selectors.md)
 
-[Revenir à l'atelier precedent](atelier-12-monitoring.md)
+[Revenir à l'atelier precedent](atelier-13-limitation_des_ressources.md)
 
 [Retour à la page démarrer avec kubernetes](../README.md)
 

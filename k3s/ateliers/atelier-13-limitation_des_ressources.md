@@ -48,7 +48,7 @@ kubectl top pod
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-14-labels_selectors.md)
+[Passer à l'atelier suivant](atelier-14-namespace.md)
 
 [Revenir à l'atelier precedent](atelier-12-monitoring.md)
 
