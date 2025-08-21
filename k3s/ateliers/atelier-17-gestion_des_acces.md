@@ -556,7 +556,7 @@ kubectl create clusterrolebinding clusterrolebinding-admin-sa \
 - Verifiez que vous disposez des droits administrateur dans le cluster depuis kubernetes Dashboard
 
 
-#### 11. Nettoyage
+#### 12. Nettoyage
 
 Penser à supprimer les ressources.
 
