@@ -153,7 +153,7 @@ Testez à nouveau avec `curl` : cette fois le trafic doit être redirigé vers l
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-16-nodeselector_affinity_taints)
+[Passer à l'atelier suivant](atelier-16-nodeselector_affinity_taints.md)
 
 [Revenir à l'atelier precedent](atelier-14-namespace.md)
 
