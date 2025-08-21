@@ -159,7 +159,7 @@ kubectl label node vm2 disktype-
 ### Atelier terminé ! Félicitations !!!
 
 
-[Passer à l'atelier suivant](atelier-15-labels_selectors.md)
+[Passer à l'atelier suivant](atelier-17-gestion_des_acces.md)
 
 [Revenir à l'atelier precedent](atelier-15-labels_selectors.md)
 
