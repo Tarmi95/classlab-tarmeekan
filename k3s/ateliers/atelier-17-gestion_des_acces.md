@@ -567,7 +567,7 @@ Penser à supprimer les ressources.
 
 [Passer à l'atelier suivant](atelier-18-autoscaling.md)
 
-[Revenir à l'atelier precedent](atelier-16-nodeselector_affinity_taints)
+[Revenir à l'atelier precedent](atelier-16-nodeselector_affinity_taints.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
