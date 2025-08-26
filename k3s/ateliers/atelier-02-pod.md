@@ -243,7 +243,7 @@ kubectl get pods
 
 [Passer à l'atelier suivant](atelier-03-manifests_kubernetes.md)
 
-[Revenir à l'atelier precedent](atelier-01-kubernetes_dashboard.md)
+[Revenir à l'atelier precedent](atelier-01-dashboard.md)
 
 
 [Retour à la page démarrer avec kubernetes](../README.md)
