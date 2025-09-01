@@ -153,6 +153,12 @@ kubectl get nodes
 
 ---
 
+## **Evaluation `Kubernetes` :**  
+
+➡️ Pour la partie des évaluations `Kubernetes`, cliques [ici](https://gitlab.com/ftutorials-evaluations/kubernetes/-/tree/main/evaluation-1?ref_type=heads#%C3%A9valuation-pratique-kubernetes) !
+
+---
+
 
 ## 📚 Pour aller plus loin
 

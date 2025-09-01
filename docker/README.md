@@ -16,7 +16,7 @@ ansible-playbook /vagrant/ansible/playbooks/docker-install.yaml
 Afin de permettre à l’utilisateur `vagrant` d’exécuter `Docker` sans utiliser `sudo`, une deconnexion et reconnexion à la box vagrant `VM1` peut être necessaire.
 
 
-### 2. Lancer un conteneur Docker
+### 2. Commencer avec Docker
 
 Les actions sont à réaliser sur `VM1`.
 
@@ -91,6 +91,13 @@ docker system prune -a -f
 ```
 
 ---
+
+## **Pratiquer `Docker` :**  
+
+➡️ Pour la partie des ateliers `Docker`, cliques [ici](../docker/ateliers/) !
+
+---
+
 
 ## 📚 Pour aller plus loin
 
