@@ -94,7 +94,7 @@ docker system prune -a -f
 
 ## **Pratiquer `Docker` :**  
 
-➡️ Pour la partie des ateliers `Docker`, cliques [ici](./ateliers) !
+➡️ Pour la partie des ateliers `Docker`, cliques [ici](../docker/ateliers/) !
 
 ---
 
