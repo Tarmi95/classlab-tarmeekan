@@ -184,6 +184,27 @@ Résultat attendu : page HTML **"Welcome to nginx!"**
 - L’IP du **service** est **stable**, contrairement à celle d’un pod.
 - Kubernetes offre un système DNS interne pour référencer les services par **nom**.
 
+```
+# Schéma d’un Service Kubernetes
+
+                      ┌───────────────────────┐
+                      │       Service         │
+                      │ app=nginx, env=prod   │
+                      │   (IP + DNS stables)  │
+                      └───────────┬───────────┘
+                                  │
+         ┌────────────────────────┼─────────────────────────┐
+         │                        │                         │
+ ┌─────────────┐          ┌─────────────┐           ┌─────────────┐
+ │   Pod 1     │          │   Pod 2     │           │   Pod 3     │
+ │ app=nginx   │          │ app=nginx   │           │ app=nginx   │
+ │ env=prod    │          │ env=prod    │           │ env=prod    │
+ └─────────────┘          └─────────────┘           └─────────────┘
+
+
+```
+
+
 #### 7. Test depuis un navigateur Web :
 
 - Récupérer le port NodePort du service :
