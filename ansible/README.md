@@ -1,7 +1,6 @@
-
 # Ansible
 
-**Ansible est installé sur `VM1`.** 
+**Ansible est installé sur `VM1`.**
 
 ### 1. Afficher la version d'Ansible
 
@@ -12,8 +11,8 @@ vagrant ssh VM1  # ansible controleur
 ```bash
 ansible --version
 ```
-La version installée `ansible [core 2.18.5]`
 
+La version installée `ansible [core 2.18.5]`
 
 ### 2. Consulter le fichier d'inventaire
 
@@ -37,7 +36,7 @@ Les actions sont à réaliser sur `VM1` depuis le répertoire personnel de vagra
 ansible all -m ping
 ```
 
-Sortie de commande attendu : 
+Sortie de commande attendu :
 
 ```bash
 192.168.56.13 | SUCCESS => {
@@ -50,12 +49,17 @@ Sortie de commande attendu :
 }
 ```
 
-En utilisant ansible-playbook : 
-
+En utilisant ansible-playbook :
 
 ```bash
 ansible-playbook /vagrant/ansible/playbooks/ping.yaml
 ```
+
+---
+
+## **Pratiquer `Ansible` :**
+
+➡️ Pour la partie des ateliers `Ansible`, cliques [ici](./ateliers) !
 
 ---
 
@@ -64,6 +68,4 @@ ansible-playbook /vagrant/ansible/playbooks/ping.yaml
 - [Documentation Ansible](https://docs.ansible.com/)
 - [Retour en arrière](../README.md)
 
-
 ---
-
