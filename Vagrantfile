@@ -7,8 +7,8 @@ Vagrant.configure("2") do |config|
   # 1) Déclarez ici vos VMs “cibles” (VM2 & VM3) avec type de box, ip, mémoire et CPUs
   # ────────────────────────────────────────────────────────────────────────────
   machines = [
-    { name: "VM2", box: "bento/ubuntu-24.04",     ip: "192.168.56.12", memory: 1024, cpus: 1 },
-    { name: "VM3", box: "bento/ubuntu-24.04", ip: "192.168.56.13", memory: 3096, cpus: 2 }
+    { name: "VM2", box: "bento/ubuntu-24.04", ip: "192.168.56.12", memory: 1024, cpus: 1 },
+    { name: "VM3", box: "bento/ubuntu-24.04", ip: "192.168.56.13", memory: 1024, cpus: 1 }
   ]
 
   machines.each_with_index do |machine, idx|
@@ -48,8 +48,8 @@ Vagrant.configure("2") do |config|
                     
     node.vm.provider "virtualbox" do |vb|
       vb.name   = "VM1"
-      vb.memory = 1024
-      vb.cpus   = 1
+      vb.memory = 3096
+      vb.cpus   = 2
     end
 
     # Avant de lancer VM1, on s’assure que VM2 & VM3 sont prêtes
