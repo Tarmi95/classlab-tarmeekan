@@ -1,14 +1,13 @@
-
 # ClassLab
 
-Bienvenue dans ce **LAB** pour pratiquer sereinement !  
+Bienvenue dans ce **LAB** pour pratiquer sereinement !
 
 > 🎯 L'objectif de ce lab est de donner à chaque apprenant un environnement identique, sans effectuer des modifications majeures sur son PC personnel ni dépendre des configurations locales.
 
 ---
 
 ⚠️ **IMPORTANT** :  
-**LES IMAGES DOCKER DE CE LAB SONT RÉSERVÉES À DES FINS DE TEST ET D’APPRENTISSAGE UNIQUEMENT !**  ➡️ **NE PAS LES UTILISER DANS UN  ENVIRONNEMENT DE PRODUCTION.**
+**LES IMAGES DOCKER DE CE LAB SONT RÉSERVÉES À DES FINS DE TEST ET D’APPRENTISSAGE UNIQUEMENT !** ➡️ **NE PAS LES UTILISER DANS UN ENVIRONNEMENT DE PRODUCTION.**
 
 ---
 
@@ -16,12 +15,11 @@ Bienvenue dans ce **LAB** pour pratiquer sereinement !
 
 - `Docker` : Outil de conteneurisation.
 - `Kubernetes` : Outil d'orchestration des conteneurs.
-- `Ansible` :  Outil de gestion de la configuration et de déploiement.
+- `Ansible` : Outil de gestion de la configuration et de déploiement.
 
 ---
 
-
-## ✅ Pré-requis 
+## ✅ Pré-requis
 
 **Ce dont tu auras besoin :**
 
@@ -35,19 +33,19 @@ Bienvenue dans ce **LAB** pour pratiquer sereinement !
 
 ---
 
-## **Avant de commencer sur `WINDOWS` :**  
+## **Avant de commencer sur `WINDOWS` :**
 
 ➡️ Pour la partie `Windows`, cliques [ici](./windows/README.md) !
 
 ---
 
-## **Avant de commencer sur `MacOS` :**  
+## **Avant de commencer sur `MacOS` :**
 
 ➡️ Pour la partie `MacOS`, cliques [ici](./macos/README.md) !
 
 ---
 
-## **Avant de commencer sur `Linux Ubuntu` :**  
+## **Avant de commencer sur `Linux Ubuntu` :**
 
 ➡️ Pour la partie `Linux Ubuntu`, cliques [ici](./linux/README.md) !
 
@@ -57,20 +55,19 @@ Bienvenue dans ce **LAB** pour pratiquer sereinement !
 
 Le fichier [Vagrantfile](Vagrantfile) crée les machines virtuelles suivantes :
 
-| Nom | Rôle | CPU / RAM | OS |
-|-----|------|----------|----------------|
-| `VM1` | VM de Docker | 1 / 1Go | ubuntu 24.04 |
-| `VM2` | VM de kubernetes master node | 1 / 1Go | ubuntu 24.04 |
-| `VM3` | VM de kubernetes worker node | 2 / 2Go | ubuntu 24.04 |
+| Nom   | Rôle                         | CPU / RAM | OS           |
+| ----- | ---------------------------- | --------- | ------------ |
+| `VM1` | VM de Docker                 | 1 / 1Go   | ubuntu 24.04 |
+| `VM2` | VM de kubernetes master node | 1 / 1Go   | ubuntu 24.04 |
+| `VM3` | VM de kubernetes worker node | 2 / 2Go   | ubuntu 24.04 |
 
 Pour en savoir plus sur l'outil qui permet de créer, configurer et gérer des machines virtuelles de manière automatisée à l’aide de simples fichiers de configuration, cliques [ici](./vms/README.md).
 
 ---
 
-
 ## 🚀 Comment utiliser le LAB
 
-Commencer par creer un nouveau dossier ou se positionner dans un dossier de ton choix. 
+Commencer par creer un nouveau dossier ou se positionner dans un dossier de ton choix.
 
 ### 1. Cloner le projet
 
@@ -83,11 +80,11 @@ N'hésites pas à utiliser la méthode de ton choix.
 ### 2. Demarrer les machines virtuelles depuis ton terminal
 
 ```bash
-cd classlab 
+cd classlab
 ```
 
 ```bash
-vagrant up 
+vagrant up
 ```
 
 Il faut compter en moyenne environ **`8 minutes`** pour le demarrage et la configuration des machines virtuelles.
@@ -98,7 +95,6 @@ Il faut compter en moyenne environ **`8 minutes`** pour le demarrage et la confi
 vagrant help
 ```
 
-
 ### 4. Lister et voir l'état des machines virtuelles depuis ton terminal
 
 ```bash
@@ -108,15 +104,15 @@ vagrant status
 ### 5. Tester la connexion SSH depuis ton terminal
 
 ```bash
-vagrant ssh VM1  
-vagrant ssh VM2 
-vagrant ssh VM3  
+vagrant ssh VM1
+vagrant ssh VM2
+vagrant ssh VM3
 ```
 
 ### 6. Arrêter les machines virtuelles depuis ton terminal
 
 ```bash
-vagrant halt 
+vagrant halt
 ```
 
 ---
@@ -127,9 +123,26 @@ vagrant halt
 
 ---
 
+## GIT
+
+➡️ Pour la partie `GIT`, cliques [ici](./git-scm/README.md) !
+
+---
+
+## GITLAB
+
+➡️ Pour la partie `GITLAB`, cliques [ici](./gitlab/README.md) !
+
+---
+
+## Prometheus / Grafana
+
+➡️ Pour la partie `Prometheus / Grafana`, cliques [ici](./prometheus_grafana/README.md) !
+
+---
+
 ## Kubernetes avec K3S
 
 ➡️ Pour la partie `Kubernetes avec K3S`, cliques [ici](./k3s/README.md) !
 
 ---
-

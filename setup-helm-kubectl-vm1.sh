@@ -8,11 +8,9 @@ KUBECONFIG_FILE="${KUBECONFIG_DIR}/config"
 
 echo "[INFO] Installation de Helm sur VM1…"
 
-curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
-sudo apt-get install apt-transport-https --yes
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
-sudo apt-get install helm -y
+curl -fsSL -o /tmp/get-helm-3.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod +x /tmp/get-helm-3.sh
+/tmp/get-helm-3.sh
 
 # Vérifier que la commande helm existe
 if ! command -v helm &> /dev/null; then

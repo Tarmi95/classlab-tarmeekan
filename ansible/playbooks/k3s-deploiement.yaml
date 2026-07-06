@@ -159,9 +159,27 @@
         group: root
         mode: '0644'
 
-    - name: Attendre 60 secondes pour que MetalLB se déploie
-      pause:
-        seconds: 60
+    - name: Attendre que le namespace metallb-system soit créé
+      shell: kubectl wait --for=jsonpath='{.status.phase}'=Active namespace/metallb-system --timeout=120s
+      retries: 5
+      delay: 10
+
+    - name: Créer le secret memberlist pour MetalLB
+      shell: |
+        kubectl create secret generic memberlist \
+          --from-literal=secretkey="$(openssl rand -base64 128)" \
+          -n metallb-system \
+          --dry-run=client -o yaml | kubectl apply -f -
+
+    - name: Attendre que les pods MetalLB soient prêts
+      shell: >
+        kubectl wait --namespace metallb-system
+        --for=condition=ready pod
+        --selector=app=metallb
+        --timeout=120s
+      retries: 3
+      delay: 15
+      ignore_errors: true
 
     - name: Déployer MetalLB Pool & L2Advertisement via kubectl
       shell: kubectl apply -f {{ metallb_pool }}

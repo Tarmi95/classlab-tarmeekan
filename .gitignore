@@ -7,8 +7,17 @@ Thumbs.db
 desktop.ini
 *.log
 
+CLAUDE.md
+Deroule_pedagogique_Usine_Logicielle.md
+
+webapp-java/
+usine-logicielle/
+devops-webapp/
 quiz-app/
 k3s/manifests-kubernetes
+ansible/playbooks/deploy-webapp-java.yaml
+ansible/playbooks/deploy-webapp-k8s.yaml
+ansible/playbooks/install_*
 
 # VSCode
 .vscode/
