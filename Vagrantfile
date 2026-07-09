@@ -3,11 +3,13 @@
 
 Vagrant.configure("2") do |config|
 
+  config.vm.boot_timeout = 600
+
   # ────────────────────────────────────────────────────────────────────────────
   # 1) Déclarez ici vos VMs “cibles” (VM2 & VM3) avec type de box, ip, mémoire et CPUs
   # ────────────────────────────────────────────────────────────────────────────
   machines = [
-    { name: "VM2", box: "bento/ubuntu-24.04", ip: "192.168.56.12", memory: 1024, cpus: 1 },
+    { name: "VM2", box: "bento/ubuntu-24.04", ip: "192.168.56.12", memory: 2048, cpus: 1 },
     { name: "VM3", box: "bento/ubuntu-24.04", ip: "192.168.56.13", memory: 1024, cpus: 1 }
   ]
 
@@ -30,6 +32,8 @@ Vagrant.configure("2") do |config|
         vb.name   = machine[:name]
         vb.memory = machine[:memory]
         vb.cpus   = machine[:cpus]
+        # Désactive les contrôleurs inutiles pour accélérer le boot
+        vb.customize ["modifyvm", :id, "--audio", "none", "--usb", "off", "--usbehci", "off"]
       end
     end
   end
@@ -48,8 +52,9 @@ Vagrant.configure("2") do |config|
                     
     node.vm.provider "virtualbox" do |vb|
       vb.name   = "VM1"
-      vb.memory = 3096
+      vb.memory = 2048
       vb.cpus   = 2
+      vb.customize ["modifyvm", :id, "--audio", "none", "--usb", "off", "--usbehci", "off"]
     end
 
     # Avant de lancer VM1, on s’assure que VM2 & VM3 sont prêtes

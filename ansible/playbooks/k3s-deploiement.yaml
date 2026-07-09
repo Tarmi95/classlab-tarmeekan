@@ -35,6 +35,7 @@
         content: |
           disable: servicelb
           node-ip: {{ ansible_host }}
+          flannel-iface: eth1
           kubelet-arg:
             - "resolv-conf=/etc/resolv.conf"
 
@@ -120,6 +121,7 @@
           server: {{ hostvars[groups['k3s_controleur'][0]].k3s_server_endpoint }}
           token:  {{ hostvars[groups['k3s_controleur'][0]].k3s_token }}
           node-ip: {{ ansible_host }}
+          flannel-iface: eth1
 
     - name: Mettre à jour apt et installer curl
       apt:

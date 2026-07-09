@@ -15,15 +15,14 @@ spec:
         app.kubernetes.io/name: web-app
     spec:
       containers:
-      - image: nginx
-        name: web-app
-        command:
-          - /bin/sh
-          - -c
-          - "echo 'Felicitations, vous avez reussi a deployer votre application web !' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
+        - image: nginx
+          name: web-app
+          command:
+            - /bin/sh
+            - -c
+            - "echo 'Felicitations, vous avez reussi a deployer votre application web !' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -34,8 +33,8 @@ spec:
   selector:
     app.kubernetes.io/name: web-app
   ports:
-  - name: http
-    port: 80             # port interne exposé au cluster
-    protocol: TCP        # port sur lequel le conteneur écoute
-    targetPort: 80
-  type: ClusterIP  
+    - name: http
+      port: 80 # port interne exposé au cluster
+      protocol: TCP
+      targetPort: 80 # port sur lequel le conteneur écoute
+  type: LoadBalancer
